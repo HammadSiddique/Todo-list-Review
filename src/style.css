@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e9ecef;
+}
+
+.heading {
+  font-weight: 700;
+  text-align: center;
+  margin: 5% 0;
+  font-size: 2.5em;
+}
+
+.list-section {
+  border: 2px solid white;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px rgba(80, 80, 80, 0.4);
+  background-color: white;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.list-heading {
+  font-size: 1.35em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.refresh {
+  font-size: 1.1em;
+  color: rgb(104, 104, 104);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.new-task {
+  font-size: 1.2em;
+  font-style: italic;
+  border: none;
+  outline: none;
+  width: 95%;
+}
+
+.submit-task {
+  font-size: 1.1em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: 300;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.todo-list li div {
+  display: flex;
+  align-items: center;
+}
+
+.todo-input {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-family: inherit;
+  align-self: flex-start;
+  width: 29rem;
+}
+
+.fa-check {
+  display: none;
+  color: #38b000;
+}
+
+.todo-task.active .fa-check {
+  display: block;
+}
+
+.todo-task.active .fa-square {
+  display: none;
+}
+
+.todo-task.active .todo-input {
+  text-decoration: line-through;
+}
+
+button {
+  min-width: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+i {
+  font-size: 17px;
+  color: #a5a58d;
+}
+
+.completed {
+  text-align: center;
+  width: 100%;
+  font-size: 1.4em;
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+}
+
+.completed:hover {
+  background-color: #2e64a3;
+  color: white;
+  transition: 5ms 5ms;
+}
